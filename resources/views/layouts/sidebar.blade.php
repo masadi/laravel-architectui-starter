@@ -168,31 +168,31 @@
                             </a>
                             <ul>
                                 <li>
-                                    <router-link tag="a" to="/buttons-standard">
+                                    <router-link tag="a" to="/elements/buttons-standard">
                                         <i class="metismenu-icon">
                                         </i>Standard
                                     </router-link>
                                 </li>
                                 <li>
-                                    <router-link tag="a" to="/buttons-pills">
+                                    <router-link tag="a" to="/elements/buttons-pills">
                                         <i class="metismenu-icon">
                                         </i>Pills
                                     </router-link>
                                 </li>
                                 <li>
-                                    <router-link tag="a" to="/buttons-square">
+                                    <router-link tag="a" to="/elements/buttons-square">
                                         <i class="metismenu-icon">
                                         </i>Square
                                     </router-link>
                                 </li>
                                 <li>
-                                    <router-link tag="a" to="/buttons-shadow">
+                                    <router-link tag="a" to="/elements/buttons-shadow">
                                         <i class="metismenu-icon">
                                         </i>Shadow
                                     </router-link>
                                 </li>
                                 <li>
-                                    <router-link tag="a" to="/buttons-icons">
+                                    <router-link tag="a" to="/elements/buttons-icons">
                                         <i class="metismenu-icon">
                                         </i>With Icons
                                     </router-link>
@@ -200,55 +200,55 @@
                             </ul>
                         </li>
                         <li>
-                            <router-link tag="a" to="/dropdowns">
+                            <router-link tag="a" to="/elements/dropdowns">
                                 <i class="metismenu-icon">
                                 </i>Dropdowns
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/icons">
+                            <router-link tag="a" to="/elements/icons">
                                 <i class="metismenu-icon">
                                 </i>Icons
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/badges-labels">
+                            <router-link tag="a" to="/elements/badges-labels">
                                 <i class="metismenu-icon">
                                 </i>Badges
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/cards">
+                            <router-link tag="a" to="/elements/cards">
                                 <i class="metismenu-icon">
                                 </i>Cards
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/loaders">
+                            <router-link tag="a" to="/elements/loaders">
                                 <i class="metismenu-icon">
                                 </i>Loading Indicators
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/list-group">
+                            <router-link tag="a" to="/elements/list-group">
                                 <i class="metismenu-icon">
                                 </i>List Groups
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/navigation">
+                            <router-link tag="a" to="/elements/navigation">
                                 <i class="metismenu-icon">
                                 </i>Navigation Menus
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/timelines">
+                            <router-link tag="a" to="/elements/timelines">
                                 <i class="metismenu-icon">
                                 </i>Timeline
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/utilities">
+                            <router-link tag="a" to="/elements/utilities">
                                 <i class="metismenu-icon">
                                 </i>Utilities
                             </router-link>
@@ -262,103 +262,103 @@
                     </a>
                     <ul>
                         <li>
-                            <router-link tag="a" to="/tabs">
+                            <router-link tag="a" to="/components/tabs">
                                 <i class="metismenu-icon">
                                 </i>Tabs
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/accordions">
+                            <router-link tag="a" to="/components/accordions">
                                 <i class="metismenu-icon">
                                 </i>Accordions
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/notifications">
+                            <router-link tag="a" to="/components/notifications">
                                 <i class="metismenu-icon">
                                 </i>Notifications
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/modals">
+                            <router-link tag="a" to="/components/modals">
                                 <i class="metismenu-icon">
                                 </i>Modals
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/loading-blocks">
+                            <router-link tag="a" to="/components/loading-blocks">
                                 <i class="metismenu-icon">
                                 </i>Loading Blockers
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/progress-bar">
+                            <router-link tag="a" to="/components/progress-bar">
                                 <i class="metismenu-icon">
                                 </i>Progress Bar
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/tooltips-popovers">
+                            <router-link tag="a" to="/components/tooltips-popovers">
                                 <i class="metismenu-icon">
                                 </i>Tooltips &amp; Popovers
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/carousel">
+                            <router-link tag="a" to="/components/carousel">
                                 <i class="metismenu-icon">
                                 </i>Carousel
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/calendar">
+                            <router-link tag="a" to="/components/calendar">
                                 <i class="metismenu-icon">
                                 </i>Calendar
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/pagination">
+                            <router-link tag="a" to="/components/pagination">
                                 <i class="metismenu-icon">
                                 </i>Pagination
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/count-up">
+                            <router-link tag="a" to="/components/count-up">
                                 <i class="metismenu-icon">
                                 </i>Count Up
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/scrollable-elements">
+                            <router-link tag="a" to="/components/scrollable-elements">
                                 <i class="metismenu-icon">
                                 </i>Scrollable
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/tree-view">
+                            <router-link tag="a" to="/components/tree-view">
                                 <i class="metismenu-icon">
                                 </i>Tree View
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/maps">
+                            <router-link tag="a" to="/components/maps">
                                 <i class="metismenu-icon">
                                 </i>Maps
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/ratings">
+                            <router-link tag="a" to="/components/ratings">
                                 <i class="metismenu-icon">
                                 </i>Ratings
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/image-crop">
+                            <router-link tag="a" to="/components/image-crop">
                                 <i class="metismenu-icon">
                                 </i>Image Crop
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/guided-tours">
+                            <router-link tag="a" to="/components/guided-tours">
                                 <i class="metismenu-icon">
                                 </i>Guided Tours
                             </router-link>
@@ -372,19 +372,19 @@
                     </a>
                     <ul>
                         <li>
-                            <router-link tag="a" to="/data-tables">
+                            <router-link tag="a" to="/tables/data-tables">
                                 <i class="metismenu-icon">
                                 </i>Data Tables
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/regular">
+                            <router-link tag="a" to="/tables/regular">
                                 <i class="metismenu-icon">
                                 </i>Regular Tables
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/grid">
+                            <router-link tag="a" to="/tables/grid">
                                 <i class="metismenu-icon">
                                 </i>Grid Tables
                             </router-link>
@@ -393,25 +393,25 @@
                 </li>
                 <li class="app-sidebar__heading">Dashboard Widgets</li>
                 <li>
-                    <router-link tag="a" to="/chart-boxes">
+                    <router-link tag="a" to="/widgets/chart-boxes">
                         <i class="metismenu-icon pe-7s-graph">
                         </i>Chart Boxes 1
                     </router-link>
                 </li>
                 <li>
-                    <router-link tag="a" to="/chart-boxes-2">
+                    <router-link tag="a" to="/widgets/chart-boxes-2">
                         <i class="metismenu-icon pe-7s-way">
                         </i>Chart Boxes 2
                     </router-link>
                 </li>
                 <li>
-                    <router-link tag="a" to="/chart-boxes-3">
+                    <router-link tag="a" to="/widgets/chart-boxes-3">
                         <i class="metismenu-icon pe-7s-ball">
                         </i>Chart Boxes 3
                     </router-link>
                 </li>
                 <li>
-                    <router-link tag="a" to="/profile-boxes">
+                    <router-link tag="a" to="/widgets/profile-boxes">
                         <i class="metismenu-icon pe-7s-id">
                         </i>Profile Boxes
                     </router-link>
@@ -424,25 +424,25 @@
                     </a>
                     <ul>
                         <li>
-                            <router-link tag="a" to="/controls">
+                            <router-link tag="a" to="/forms/controls">
                                 <i class="metismenu-icon">
                                 </i>Controls
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/layouts">
+                            <router-link tag="a" to="/forms/layouts">
                                 <i class="metismenu-icon">
                                 </i>Layouts
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/validation">
+                            <router-link tag="a" to="/forms/validation">
                                 <i class="metismenu-icon">
                                 </i>Validation
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/wizard">
+                            <router-link tag="a" to="/forms/wizard">
                                 <i class="metismenu-icon">
                                 </i>Wizard
                             </router-link>
@@ -456,49 +456,49 @@
                     </a>
                     <ul>
                         <li>
-                            <router-link tag="a" to="/datepicker">
+                            <router-link tag="a" to="/widgets/datepicker">
                                 <i class="metismenu-icon">
                                 </i>Datepicker
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/range-slider">
+                            <router-link tag="a" to="/widgets/range-slider">
                                 <i class="metismenu-icon">
                                 </i>Range Slider
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/input-selects">
+                            <router-link tag="a" to="/widgets/input-selects">
                                 <i class="metismenu-icon">
                                 </i>Input Selects
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/toggle-switch">
+                            <router-link tag="a" to="/widgets/toggle-switch">
                                 <i class="metismenu-icon">
                                 </i>Toggle Switch
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/wysiwyg-editor">
+                            <router-link tag="a" to="/widgets/wysiwyg-editor">
                                 <i class="metismenu-icon">
                                 </i>WYSIWYG Editor
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/input-mask">
+                            <router-link tag="a" to="/widgets/input-mask">
                                 <i class="metismenu-icon">
                                 </i>Input Mask
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/clipboard">
+                            <router-link tag="a" to="/widgets/clipboard">
                                 <i class="metismenu-icon">
                                 </i>Clipboard
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/textarea-autosize">
+                            <router-link tag="a" to="/widgets/textarea-autosize">
                                 <i class="metismenu-icon">
                                 </i>Textarea Autosize
                             </router-link>
@@ -507,19 +507,19 @@
                 </li>
                 <li class="app-sidebar__heading">Charts</li>
                 <li>
-                    <router-link tag="a" to="/chartjs">
+                    <router-link tag="a" to="/charts/chartjs">
                         <i class="metismenu-icon pe-7s-graph2">
                         </i>ChartJS
                     </router-link>
                 </li>
                 <li>
-                    <router-link tag="a" to="/apexcharts">
+                    <router-link tag="a" to="/charts/apexcharts">
                         <i class="metismenu-icon pe-7s-graph">
                         </i>Apex Charts
                     </router-link>
                 </li>
                 <li>
-                    <router-link tag="a" to="/sparklines">
+                    <router-link tag="a" to="/charts/sparklines">
                         <i class="metismenu-icon pe-7s-graph1">
                         </i>Chart Sparklines
                     </router-link>

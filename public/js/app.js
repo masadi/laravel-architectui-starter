@@ -2203,7 +2203,7 @@ vue__WEBPACK_IMPORTED_MODULE_0__.default.use(vue_router__WEBPACK_IMPORTED_MODULE
   mode: 'history',
   routes: [// Login
   {
-    path: '/',
+    path: '/login',
     name: 'login',
     meta: {
       title: 'Login',
@@ -2215,8 +2215,8 @@ vue__WEBPACK_IMPORTED_MODULE_0__.default.use(vue_router__WEBPACK_IMPORTED_MODULE
 
   }, // Checkpoint
   {
-    path: '/checkpoint',
-    name: 'checkpoint',
+    path: '/login-boxed',
+    name: 'login_boxed',
     meta: {
       title: 'Checkpoint',
       layout: 'userpages'
@@ -2226,8 +2226,8 @@ vue__WEBPACK_IMPORTED_MODULE_0__.default.use(vue_router__WEBPACK_IMPORTED_MODULE
     } //beforeEnter: guards.verifyOtpAtLogin
 
   }, {
-    path: '/checkpoint/google2fa/activate',
-    name: 'google2fa.activate',
+    path: '/register',
+    name: 'register',
     meta: {
       title: 'Activate Google Two Factor Authentication',
       layout: 'userpages'
@@ -2238,8 +2238,8 @@ vue__WEBPACK_IMPORTED_MODULE_0__.default.use(vue_router__WEBPACK_IMPORTED_MODULE
 
   }, // Password Reset
   {
-    path: '/password/reset',
-    name: 'password.request',
+    path: '/register-boxed',
+    name: 'register_boxed',
     meta: {
       title: 'Reset Password',
       layout: 'userpages'
@@ -2249,8 +2249,8 @@ vue__WEBPACK_IMPORTED_MODULE_0__.default.use(vue_router__WEBPACK_IMPORTED_MODULE
     } //beforeEnter: guards.authenticate
 
   }, {
-    path: '/password/reset/:token',
-    name: 'password.reset',
+    path: '/forgot-password',
+    name: 'forgot_password',
     meta: {
       title: 'Reset Password',
       layout: 'userpages'
@@ -2260,6 +2260,15 @@ vue__WEBPACK_IMPORTED_MODULE_0__.default.use(vue_router__WEBPACK_IMPORTED_MODULE
     },
     props: true //beforeEnter: guards.authenticate
 
+  }, {
+    path: '/forgot-password-boxed',
+    name: 'forgot-password-boxed',
+    meta: {
+      layout: 'userpages'
+    },
+    component: function component() {
+      return Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! ../components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue"));
+    }
   }, // Dashboard
   {
     path: '/dashboard',
@@ -2319,17 +2328,8 @@ vue__WEBPACK_IMPORTED_MODULE_0__.default.use(vue_router__WEBPACK_IMPORTED_MODULE
       return Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! ../components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue"));
     }
   }, {
-    path: '/pages/register-boxed',
-    name: 'register-boxed',
-    meta: {
-      layout: 'userpages'
-    },
-    component: function component() {
-      return Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! ../components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue"));
-    }
-  }, {
-    path: '/pages/forgot-password-boxed',
-    name: 'forgot-password-boxed',
+    path: '/crm',
+    name: 'crm',
     meta: {
       layout: 'userpages'
     },
@@ -2340,6 +2340,42 @@ vue__WEBPACK_IMPORTED_MODULE_0__.default.use(vue_router__WEBPACK_IMPORTED_MODULE
   {
     path: '/elements/buttons-standard',
     name: 'buttons-standard',
+    meta: {
+      layout: 'default'
+    },
+    component: function component() {
+      return Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! ../components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue"));
+    }
+  }, {
+    path: '/elements/buttons-pills',
+    name: 'buttons-pills',
+    meta: {
+      layout: 'default'
+    },
+    component: function component() {
+      return Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! ../components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue"));
+    }
+  }, {
+    path: '/elements/buttons-square',
+    name: 'buttons-square',
+    meta: {
+      layout: 'default'
+    },
+    component: function component() {
+      return Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! ../components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue"));
+    }
+  }, {
+    path: '/elements/buttons-shadow',
+    name: 'buttons-shadow',
+    meta: {
+      layout: 'default'
+    },
+    component: function component() {
+      return Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! ../components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue"));
+    }
+  }, {
+    path: '/elements/buttons-icons',
+    name: 'buttons-icons',
     meta: {
       layout: 'default'
     },
@@ -2530,6 +2566,11 @@ vue__WEBPACK_IMPORTED_MODULE_0__.default.use(vue_router__WEBPACK_IMPORTED_MODULE
     },
     component: function component() {
       return Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! ../components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue"));
+    }
+  }, {
+    path: '*',
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ "resources_js_components_NotFound_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/NotFound.vue */ "./resources/js/components/NotFound.vue"));
     }
   }]
 }));
@@ -55382,7 +55423,7 @@ Vue.compile = compileToFunctions;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if (chunkId === "resources_js_components_Dashboard_vue") return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_Dashboard_vue":1,"resources_js_components_NotFound_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

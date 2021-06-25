@@ -16,7 +16,7 @@ export default new Router({
     // Login
 
     {
-      path: '/',
+      path: '/login',
       name: 'login',
       meta: {
         title: 'Login',
@@ -29,8 +29,8 @@ export default new Router({
     // Checkpoint
 
     {
-      path: '/checkpoint',
-      name: 'checkpoint',
+      path: '/login-boxed',
+      name: 'login_boxed',
       meta: {
         title: 'Checkpoint',
         layout: 'userpages'
@@ -40,8 +40,8 @@ export default new Router({
     },
 
     {
-      path: '/checkpoint/google2fa/activate',
-      name: 'google2fa.activate',
+      path: '/register',
+      name: 'register',
       meta: {
         title: 'Activate Google Two Factor Authentication',
         layout: 'userpages'
@@ -54,8 +54,8 @@ export default new Router({
     // Password Reset
 
     {
-      path: '/password/reset',
-      name: 'password.request',
+      path: '/register-boxed',
+      name: 'register_boxed',
       meta: {
         title: 'Reset Password',
         layout: 'userpages'
@@ -65,8 +65,8 @@ export default new Router({
     },
 
     {
-      path: '/password/reset/:token',
-      name: 'password.reset',
+      path: '/forgot-password',
+      name: 'forgot_password',
       meta: {
         title: 'Reset Password',
         layout: 'userpages'
@@ -75,7 +75,12 @@ export default new Router({
       props: true,
       //beforeEnter: guards.authenticate
     },
-
+    {
+      path: '/forgot-password-boxed',
+      name: 'forgot-password-boxed',
+      meta: {layout: 'userpages'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
     // Dashboard
 
     {
@@ -137,23 +142,42 @@ export default new Router({
       component: () => import('../components/ExampleComponent.vue'),
     },
     {
-      path: '/pages/register-boxed',
-      name: 'register-boxed',
+      path: '/crm',
+      name: 'crm',
       meta: {layout: 'userpages'},
       component: () => import('../components/ExampleComponent.vue'),
     },
-    {
-      path: '/pages/forgot-password-boxed',
-      name: 'forgot-password-boxed',
-      meta: {layout: 'userpages'},
-      component: () => import('../components/ExampleComponent.vue'),
-    },
+    
 
     // Elements
 
     {
       path: '/elements/buttons-standard',
       name: 'buttons-standard',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/elements/buttons-pills',
+      name: 'buttons-pills',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/elements/buttons-square',
+      name: 'buttons-square',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/elements/buttons-shadow',
+      name: 'buttons-shadow',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/elements/buttons-icons',
+      name: 'buttons-icons',
       meta: {layout: 'default'},
       component: () => import('../components/ExampleComponent.vue'),
     },
@@ -290,6 +314,10 @@ export default new Router({
       name: 'chartjs',
       meta: {layout: 'default'},
       component: () => import('../components/ExampleComponent.vue'),
+    },
+    { 
+      path: '*', 
+      component: () => import('../components/NotFound.vue'),
     },
   ]
 })
