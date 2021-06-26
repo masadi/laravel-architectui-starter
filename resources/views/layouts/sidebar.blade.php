@@ -456,49 +456,49 @@
                     </a>
                     <ul>
                         <li>
-                            <router-link tag="a" to="/widgets/datepicker">
+                            <router-link tag="a" to="/form/widgets/datepicker">
                                 <i class="metismenu-icon">
                                 </i>Datepicker
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/widgets/range-slider">
+                            <router-link tag="a" to="/form/widgets/range-slider">
                                 <i class="metismenu-icon">
                                 </i>Range Slider
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/widgets/input-selects">
+                            <router-link tag="a" to="/form/widgets/input-selects">
                                 <i class="metismenu-icon">
                                 </i>Input Selects
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/widgets/toggle-switch">
+                            <router-link tag="a" to="/form/widgets/toggle-switch">
                                 <i class="metismenu-icon">
                                 </i>Toggle Switch
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/widgets/wysiwyg-editor">
+                            <router-link tag="a" to="/form/widgets/wysiwyg-editor">
                                 <i class="metismenu-icon">
                                 </i>WYSIWYG Editor
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/widgets/input-mask">
+                            <router-link tag="a" to="/form/widgets/input-mask">
                                 <i class="metismenu-icon">
                                 </i>Input Mask
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/widgets/clipboard">
+                            <router-link tag="a" to="/form/widgets/clipboard">
                                 <i class="metismenu-icon">
                                 </i>Clipboard
                             </router-link>
                         </li>
                         <li>
-                            <router-link tag="a" to="/widgets/textarea-autosize">
+                            <router-link tag="a" to="/form/widgets/textarea-autosize">
                                 <i class="metismenu-icon">
                                 </i>Textarea Autosize
                             </router-link>

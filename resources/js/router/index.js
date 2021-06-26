@@ -81,6 +81,24 @@ export default new Router({
       meta: {layout: 'userpages'},
       component: () => import('../components/ExampleComponent.vue'),
     },
+    {
+      path: '/chat',
+      name: 'chat',
+      meta: {layout: 'userpages'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/faq-section',
+      name: 'faq-section',
+      meta: {layout: 'userpages'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/mailbox',
+      name: 'mailbox',
+      meta: {layout: 'userpages'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
     // Dashboard
 
     {
@@ -206,6 +224,18 @@ export default new Router({
       component: () => import('../components/ExampleComponent.vue'),
     },
     {
+      path: '/elements/loaders',
+      name: 'loaders',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/elements/navigation',
+      name: 'navigation',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
       path: '/elements/list-group',
       name: 'list-group',
       meta: {layout: 'default'},
@@ -239,14 +269,68 @@ export default new Router({
       component: () => import('../components/ExampleComponent.vue'),
     },
     {
+      path: '/components/notifications',
+      name: 'notifications',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/components/loading-blocks',
+      name: 'loading-blocks',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
       path: '/components/modals',
       name: 'modals',
       meta: {layout: 'default'},
       component: () => import('../components/ExampleComponent.vue'),
     },
     {
+      path: '/components/calendar',
+      name: 'calendar',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/components/count-up',
+      name: 'count-up',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/components/scrollable-elements',
+      name: 'scrollable-elements',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/components/tree-view',
+      name: 'tree-view',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
       path: '/components/progress-bar',
       name: 'progress-bar',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/components/ratings',
+      name: 'ratings',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/components/image-crop',
+      name: 'image-crop',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/components/guided-tours',
+      name: 'guided-tours',
       meta: {layout: 'default'},
       component: () => import('../components/ExampleComponent.vue'),
     },
@@ -278,8 +362,20 @@ export default new Router({
     // Tables
 
     {
-      path: '/tables/regular-tables',
+      path: '/tables/data-tables',
+      name: 'data-tables',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/tables/regular',
       name: 'regular-tables',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/tables/grid',
+      name: 'grid-tables',
       meta: {layout: 'default'},
       component: () => import('../components/ExampleComponent.vue'),
     },
@@ -287,12 +383,29 @@ export default new Router({
     // Dashboard Widgets
 
     {
+      path: '/widgets/chart-boxes',
+      name: 'chart-boxes',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/widgets/chart-boxes-2',
+      name: 'chart-boxes-2',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
       path: '/widgets/chart-boxes-3',
       name: 'chart-boxes-3',
       meta: {layout: 'default'},
       component: () => import('../components/ExampleComponent.vue'),
     },
-
+    {
+      path: '/widgets/profile-boxes',
+      name: 'profile-boxes',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
     // Forms
 
     {
@@ -307,11 +420,85 @@ export default new Router({
       meta: {layout: 'default'},
       component: () => import('../components/ExampleComponent.vue'),
     },
+    {
+      path: '/forms/validation',
+      name: 'validation',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/forms/wizard',
+      name: 'wizard',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    // Form Widgets
+
+    {
+      path: '/form/widgets/datepicker',
+      name: 'form.datepicker',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/form/widgets/range-slider',
+      name: 'form.range-slider',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/form/widgets/input-selects',
+      name: 'form.input-selects',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/form/widgets/toggle-switch',
+      name: 'form.toggle-switch',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/form/widgets/wysiwyg-editor',
+      name: 'form.wysiwyg-editor',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/form/widgets/input-mask',
+      name: 'form.input-mask',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/form/widgets/clipboard',
+      name: 'form.clipboard',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/form/widgets/textarea-autosize',
+      name: 'form.textarea-autosize',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
     // Charts
 
     {
       path: '/charts/chartjs',
       name: 'chartjs',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/charts/apexcharts',
+      name: 'apexcharts',
+      meta: {layout: 'default'},
+      component: () => import('../components/ExampleComponent.vue'),
+    },
+    {
+      path: '/charts/sparklines',
+      name: 'sparklines',
       meta: {layout: 'default'},
       component: () => import('../components/ExampleComponent.vue'),
     },
