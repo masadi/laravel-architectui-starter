@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class LoginController extends Controller
 {
@@ -36,5 +38,31 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+    public function login(Request $request){
+    //VALIDASI EMAIL DAN PASSWORD YANG DIKIRIMKAN
+        $this->validate($request, [
+            'email' => 'required|email|exists:users,email',
+            'password' => 'required'
+        ]);
+
+        //ADA 3 VALUE YANG DIKIRIMKAN, YAKNI: EMAIL, PASSWORD DAN REMEMBER_ME
+        //AMBIL SEMUA REQUEST TERSEBUT KECUALI REMEMBER ME KARENA YANG DIBUTUHKAN 
+        //UNTUK OTENTIKASI ADALAH EMAIL DAN PASSWORD
+        $auth = $request->except(['remember_me']);
+        
+        //MELAKUKAN PROSES OTENTIKASI
+        if (auth()->attempt($auth, $request->remember_me)) {
+            $random = Str::random(40);
+            $user = auth()->user();
+            $user->api_token = $random;
+            $user->save();
+            //APABILA BERHASIL, GENERATE API_TOKEN MENGGUNAKAN STRING RANDOM
+            //auth()->user()->update(['api_token' => $random]);
+            //KEMUDIAN KIRIM RESPONSENYA KE CLIENT UNTUK DIPROSES LEBIH LANJUT
+            return response()->json(['status' => 'success', 'data' => auth()->user()->api_token], 200);
+        }
+        //APABILA GAGAL, KIRIM RESPONSE LAGI KE BAHWA PERMINTAAN GAGAL
+        return response()->json(['status' => 'failed']);
     }
 }

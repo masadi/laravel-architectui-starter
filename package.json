@@ -26,7 +26,9 @@
     },
     "dependencies": {
         "metismenu": "^3.0.7",
+        "moment": "^2.29.1",
         "vue-router": "^3.5.2",
-        "vue2-perfect-scrollbar": "^1.5.0"
+        "vue2-perfect-scrollbar": "^1.5.0",
+        "vuex": "^3.6.2"
     }
 }

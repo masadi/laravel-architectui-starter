@@ -12,13 +12,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//Route::get('/{any}', [App\Http\Controllers\FrontController::class,'index'])->where('any', '.*');
 Route::get('/', function () {
     return view('welcome');
 });
 
 Auth::routes();
 Route::get('/app/{vue_capture?}', function () {
-    return view('app');
+    return view('app1');
 })->where('vue_capture', '[\/\w\.-]*')->middleware('auth');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -6,7 +6,8 @@
 
 require('./bootstrap');
 require('metismenu');
-window.Vue = require('vue').default;
+import Vue from 'vue'
+//window.Vue = require('vue').default;
 import PerfectScrollbar from 'vue2-perfect-scrollbar'
 import 'vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css'
  
@@ -31,7 +32,13 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  */
 
 import router from './router'
+import store from './store.js'
+import App from './App.vue'
 const app = new Vue({
     el: '#app',
     router,
+    store,
+    components: {
+        App
+    }
 });
