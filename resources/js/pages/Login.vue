@@ -87,7 +87,7 @@ export default {
                     this.CLEAR_ERRORS()
                     //MAKA AKAN DI-DIRECT KE ROUTE DENGAN NAME home
                     //this.$router.push({ name: 'dashboard' })
-                    window.open('/app/dashboard', '_self')
+                    window.open('/admin/dashboard', '_self')
                 }
             })
         }

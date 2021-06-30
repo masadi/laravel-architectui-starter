@@ -9,7 +9,7 @@ const router = new Router({
     return window.scrollTo({top: 0, behavior: 'smooth'});
   },
   //mode: 'history',
-  base: '/app/',
+  base: '/admin/',
   mode: 'history',
   routes: [
 
@@ -105,6 +105,7 @@ const router = new Router({
       name: 'dashboard',
       meta: {
         title: 'Dashboard',
+        requiresAuth: true
       },
       component: () => import('../components/Dashboard.vue'),
       //beforeEnter: guards.accessApp

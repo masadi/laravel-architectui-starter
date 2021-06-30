@@ -1,7 +1,7 @@
 <template>
     <div class="app-header header-shadow">
         <div class="app-header__logo">
-            <router-link :to="{ name: 'dashboard' }"><div class="logo-src"></div></router-link>
+            <a href="/"><div class="logo-src"></div></a>
             <div class="header__pane ml-auto">
                 <div>
                     <button type="button" class="hamburger close-sidebar-btn hamburger--elastic"
@@ -923,8 +923,8 @@ export default {
                 resolve()
             }).then(() => {
                 this.$store.state.token = localStorage.getItem('token')
-                window.open('/login', '_self')
-                //this.$router.push('../login')
+                //window.open('/login', '_self')
+                this.$router.push('../login')
             })
         }
     }

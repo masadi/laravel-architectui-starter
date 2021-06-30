@@ -105,7 +105,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           //this.$router.push({ name: 'dashboard' })
 
 
-          window.open('/app/dashboard', '_self');
+          window.open('/admin/dashboard', '_self');
         }
       });
     }

@@ -2931,8 +2931,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         localStorage.removeItem('token');
         resolve();
       }).then(function () {
-        _this2.$store.state.token = localStorage.getItem('token');
-        window.open('/login', '_self'); //this.$router.push('../login')
+        _this2.$store.state.token = localStorage.getItem('token'); //window.open('/login', '_self')
+
+        _this2.$router.push('../login');
       });
     }
   })
@@ -3850,7 +3851,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_2__.default({
     });
   },
   //mode: 'history',
-  base: '/app/',
+  base: '/admin/',
   mode: 'history',
   routes: [// Login
   {
@@ -3951,7 +3952,8 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_2__.default({
     path: '/dashboard',
     name: 'dashboard',
     meta: {
-      title: 'Dashboard'
+      title: 'Dashboard',
+      requiresAuth: true
     },
     component: function component() {
       return __webpack_require__.e(/*! import() */ "resources_js_components_Dashboard_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/Dashboard.vue */ "./resources/js/components/Dashboard.vue"));
@@ -62451,18 +62453,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "app-header header-shadow" }, [
-    _c(
-      "div",
-      { staticClass: "app-header__logo" },
-      [
-        _c("router-link", { attrs: { to: { name: "dashboard" } } }, [
-          _c("div", { staticClass: "logo-src" })
-        ]),
-        _vm._v(" "),
-        _vm._m(0)
-      ],
-      1
-    ),
+    _vm._m(0),
     _vm._v(" "),
     _vm._m(1),
     _vm._v(" "),
@@ -64142,20 +64133,26 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "header__pane ml-auto" }, [
-      _c("div", [
-        _c(
-          "button",
-          {
-            staticClass: "hamburger close-sidebar-btn hamburger--elastic",
-            attrs: { type: "button", "data-class": "closed-sidebar" }
-          },
-          [
-            _c("span", { staticClass: "hamburger-box" }, [
-              _c("span", { staticClass: "hamburger-inner" })
-            ])
-          ]
-        )
+    return _c("div", { staticClass: "app-header__logo" }, [
+      _c("a", { attrs: { href: "/" } }, [
+        _c("div", { staticClass: "logo-src" })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "header__pane ml-auto" }, [
+        _c("div", [
+          _c(
+            "button",
+            {
+              staticClass: "hamburger close-sidebar-btn hamburger--elastic",
+              attrs: { type: "button", "data-class": "closed-sidebar" }
+            },
+            [
+              _c("span", { staticClass: "hamburger-box" }, [
+                _c("span", { staticClass: "hamburger-inner" })
+              ])
+            ]
+          )
+        ])
       ])
     ])
   },
