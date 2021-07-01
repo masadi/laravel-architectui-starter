@@ -119,9 +119,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     //KITA MELAKUKAN PENGECEKAN JIKA SUDAH LOGIN DIMANA VALUE isAuth BERNILAI TRUE
     if (this.isAuth) {
       //MAKA DI-DIRECT KE ROUTE DENGAN NAME home
-      this.$router.push({
-        name: 'dashboard'
-      });
+      window.open('/admin/dashboard', '_self');
     }
   },
   computed: _objectSpread(_objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_0__.mapGetters)(['isAuth'])), (0,vuex__WEBPACK_IMPORTED_MODULE_0__.mapState)(['errors'])),

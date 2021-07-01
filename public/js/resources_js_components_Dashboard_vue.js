@@ -1078,9 +1078,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//import "../../assets/js/app.js";
-//import "../../assets/js/demo.js";
-//import "../../assets/js/scrollbar.js";
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {
     console.log("Component mounted.");

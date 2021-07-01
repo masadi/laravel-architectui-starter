@@ -923,8 +923,8 @@ export default {
                 resolve()
             }).then(() => {
                 this.$store.state.token = localStorage.getItem('token')
-                //window.open('/login', '_self')
-                this.$router.push('../login')
+                window.open('/login', '_self')
+                //this.$router.push('../login')
             })
         }
     }

@@ -27,8 +27,11 @@
             'app-sidebar': Sidebar,
             'app-footer': Footer,
         },
-        mounted() {
-            console.log(this.isAuth);
+        created() {
+          console.log(this.isAuth);
+          if(!this.isAuth){
+            window.open('/login', '_self')
+          }
         },
     }
 </script>

@@ -1066,9 +1066,6 @@
 </template>
 
 <script>
-//import "../../assets/js/app.js";
-//import "../../assets/js/demo.js";
-//import "../../assets/js/scrollbar.js";
 export default {
   mounted() {
     console.log("Component mounted.");

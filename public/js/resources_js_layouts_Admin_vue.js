@@ -1000,9 +1000,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         localStorage.removeItem('token');
         resolve();
       }).then(function () {
-        _this2.$store.state.token = localStorage.getItem('token'); //window.open('/login', '_self')
-
-        _this2.$router.push('../login');
+        _this2.$store.state.token = localStorage.getItem('token');
+        window.open('/login', '_self'); //this.$router.push('../login')
       });
     }
   })
@@ -1604,8 +1603,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     'app-sidebar': _components_Sidebar_vue__WEBPACK_IMPORTED_MODULE_1__.default,
     'app-footer': _components_Footer_vue__WEBPACK_IMPORTED_MODULE_2__.default
   },
-  mounted: function mounted() {
+  created: function created() {
     console.log(this.isAuth);
+
+    if (!this.isAuth) {
+      window.open('/login', '_self');
+    }
   }
 });
 

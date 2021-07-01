@@ -66,7 +66,8 @@ export default {
         //KITA MELAKUKAN PENGECEKAN JIKA SUDAH LOGIN DIMANA VALUE isAuth BERNILAI TRUE
         if (this.isAuth) {
             //MAKA DI-DIRECT KE ROUTE DENGAN NAME home
-            this.$router.push({ name: 'dashboard' })
+            //this.$router.push({ name: 'dashboard' })
+            window.open('/admin/dashboard', '_self')
         }
     },
     computed: {
