@@ -1071,7 +1071,7 @@ const router = new Router({
 //Navigation Guards
 router.beforeEach((to, from, next) => {
   let title = 'Laravel'
-
+  //test
   if (to.meta.title)
     title += ' - ' + to.meta.title
   console.log(to);

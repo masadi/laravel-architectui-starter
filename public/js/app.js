@@ -3362,7 +3362,8 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_2__.default({
 }); //Navigation Guards
 
 router.beforeEach(function (to, from, next) {
-  var title = 'Laravel';
+  var title = 'Laravel'; //test
+
   if (to.meta.title) title += ' - ' + to.meta.title;
   console.log(to);
   document.title = title;
