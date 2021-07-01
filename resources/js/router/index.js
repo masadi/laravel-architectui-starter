@@ -21,10 +21,33 @@ const router = new Router({
       meta: {
         title: 'Login',
       },
-      component: () => import('../pages/Login.vue'),
+      component: () => import('../layouts/Auth.vue'),
+      children: [
+        {
+          path: "",
+          component: () => import('../pages/Login.vue')
+        }
+      ]
       //beforeEnter: guards.authenticate
     },
+    // Dashboard
 
+    {
+      path: '/dashboard',
+      name: 'dashboard',
+      meta: {
+        title: 'Dashboard',
+        requiresAuth: true
+      },
+      component: () => import('../layouts/Admin.vue'),
+      children: [
+        {
+          path: "",
+          component: () => import('../components/Dashboard.vue')
+        }
+      ]
+      //beforeEnter: guards.accessApp
+    },
     // Checkpoint
 
     {
@@ -32,10 +55,14 @@ const router = new Router({
       name: 'login_boxed',
       meta: {
         title: 'Checkpoint',
-        requiresAuth: true
       },
-      component: () => import('../components/ExampleComponent.vue'),
-      //beforeEnter: guards.verifyOtpAtLogin
+      component: () => import('../layouts/Auth.vue'),
+      children: [
+        {
+          path: "",
+          component: () => import('../pages/LoginBoxed.vue')
+        }
+      ]
     },
 
     {
@@ -97,18 +124,6 @@ const router = new Router({
       name: 'mailbox',
       meta: {requiresAuth: true},
       component: () => import('../components/ExampleComponent.vue'),
-    },
-    // Dashboard
-
-    {
-      path: '/dashboard',
-      name: 'dashboard',
-      meta: {
-        title: 'Dashboard',
-        requiresAuth: true
-      },
-      component: () => import('../components/Dashboard.vue'),
-      //beforeEnter: guards.accessApp
     },
 
     // Users

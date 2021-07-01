@@ -4,6 +4,9 @@
 
 <script>
 export default {
-  name: "App"
+  name: "AuthLayout"
 };
 </script>
+
+<style>
+</style>
