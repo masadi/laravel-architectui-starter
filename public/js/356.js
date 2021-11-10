@@ -1,0 +1,1 @@
+(self.webpackChunk=self.webpackChunk||[]).push([[356],{3356:(e,t,u)=>{"use strict";u.r(t),u.d(t,{default:()=>l});const n={name:"AuthLayout"};const l=(0,u(1900).Z)(n,(function(){var e=this.$createElement;return(this._self._c||e)("router-view")}),[],!1,null,null,null).exports}}]);
